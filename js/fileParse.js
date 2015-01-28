@@ -1,7 +1,10 @@
 $(document).ready(function() {
 
+    //var getUrl = ('http://localhost:63342/webdev/kanyeipsum/js/kanye.txt');
+    var getUrl = ('https://github.com/jonnykry/MBDTLIG/blob/master/js/kanye.txt');
+
     $('.generate').click(function() {
-        $.get('http://localhost:63342/webdev/kanyeipsum/js/kanye.txt', function(data) {
+        $.get(getUrl, function(data) {
             var input = data;
             // console.log(data);
             var lineData = input.split('\n');
