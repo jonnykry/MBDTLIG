@@ -1,0 +1,56 @@
+body {
+    color: #000000;
+    background-color: #FFFFFF;
+    height: 100%;
+    width: 100%;
+}
+html, body, .container {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.text-vcenter {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#top {
+    color: white;
+    background: url('2dijehv.jpg') no-repeat center center fixed;
+    display: table;
+    height: 100%;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+.layout { /* Adds an opaque black layer over image background */
+    background: rgba(0, 0, 0, 0.7) no-repeat center center fixed;
+    display: table; /* Firefox fix */
+    height: 100%;
+    width: 100%;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.ipsum {
+    color: white;
+}
+
+.ipsumContainer {
+    padding: 50px;
+    margin: 150px auto;
+    height: 500px;
+    width: 700px;
+    background: rgba(0, 0, 0, 0.8) no-repeat center center fixed;
+    border-radius: 15px;
+}
