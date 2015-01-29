@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Yeezy Ipsum</title>
 
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 
@@ -27,18 +30,32 @@
 
     <section id="top" class="container text-vcenter">
         <div class="layout">
-            <h1 class="text-center">MY BEAUTIFUL DARK TWISTED LOREM IPSUM GENERATOR</h1>
+
+            <h1>My Beautiful Dark Twisted Lorem Ipsum Generator</h1>
+
+            <p>Generate sexy, vulgar, and eloquent <a href="http://en.wikipedia.org/wiki/Lorem_ipsum">Lorem Ipsum</a> filler text for your project.<br>
+                Let Yeezy guide your development process.<br>
+                Yeezy Ipsum is the greatest Ipsum of all time.  OF ALL TIME!<br>
+                On site.  Yeezy taught me.<br></p>
 
             <div class="ipsumContainer">
                 <div id="ipsum" class="text-left"></div>
             </div>
 
-            <button type="button" class="btn btn-default btn-lg generate">Generate</button>
+            <p class="lowtext">Select your desired number of paragraphs and generate!</p>
 
-            <p><br>Created by <a href="http://jonnykrysh.me">Jonny Krysh</a>.  This is a work in progress.</p>
+            <button type="button" class="btn btn-default btn-lg generate"><span class="glyphicon glyphicon-flash"></span> Generate</button>
+            <select onchange="changeParagraphs(this.value)" id="selected">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+
+            <p class="bottomtext"><br>Created by <a href="http://jonnykrysh.me">Jonny Krysh</a></p>
         </div>
+
     </section>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
 
   </body>
 </html>

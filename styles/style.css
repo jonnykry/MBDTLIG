@@ -1,4 +1,6 @@
 body {
+    font-family: "Roboto";
+    font-size: 15px;
     color: #000000;
     background-color: #FFFFFF;
     height: 100%;
@@ -11,6 +13,17 @@ html, body, .container {
     padding: 0;
 }
 
+h1 { font-family: "Open Sans";   }
+
+a, a:visited {
+    color: white;
+    text-decoration: underline;
+}
+
+a:hover { color: white; }
+
+option, select { color: black; }
+
 .text-vcenter {
     display: table-cell;
     text-align: center;
@@ -19,7 +32,7 @@ html, body, .container {
 
 #top {
     color: white;
-    background: url('2dijehv.jpg') no-repeat center center fixed;
+    background: url('2uig41u.jpg') no-repeat center center fixed;
     display: table;
     height: 100%;
     width: 100%;
@@ -27,11 +40,10 @@ html, body, .container {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
 }
 
 .layout { /* Adds an opaque black layer over image background */
-    background: rgba(0, 0, 0, 0.7) no-repeat center center fixed;
+    background: rgba(0, 0, 0, 0.3) no-repeat center center fixed;
     display: table; /* Firefox fix */
     height: 100%;
     width: 100%;
@@ -42,15 +54,51 @@ html, body, .container {
     background-size: cover;
 }
 
-.ipsum {
-    color: white;
-}
+.ipsum { color: white; }
 
 .ipsumContainer {
     padding: 50px;
-    margin: 150px auto;
+    margin: 0 auto;
     height: 500px;
-    width: 700px;
+    width: 600px;
     background: rgba(0, 0, 0, 0.8) no-repeat center center fixed;
     border-radius: 15px;
+    overflow-y: scroll;
+}
+
+@media (max-width: 640px) {
+
+    .ipsumContainer {
+        height: 50%;
+        width: 100%;
+    }
+
+}
+
+.lowtext { margin-top: 25px; }
+
+.btn, .btn:hover, .btn:focus {
+    background: rgba(0, 0, 0, 0.8) no-repeat center center fixed !important;
+    color: white !important;
+    border: 1px solid white;
+    margin-right: 10px;
+    outline: none !important;
+}
+
+select {
+    border: 1px solid;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    appearance: none;
+}
+
+@media (max-width: 640px) {
+
+    .bottomtext { position: relative; color: #1d1d1d; }
+
+    .bottomtext a {
+        color: #1d1d1d;
+        text-decoration: underline;
+    }
+
 }
